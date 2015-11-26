@@ -21,7 +21,7 @@ class loginhelper { //class for help functions
                         <strong>   Login </strong>  
                             </div>
                             <div class="panel-body" id="login">
-                                <form role="form" action="login.php" method="post">
+                                <form role="form" action="index.php" method="post">
                                        <br />
                                      <div class="form-group input-group">
                                             <span class="input-group-addon"><i class="fa fa-user"  ></i></span>
@@ -72,15 +72,12 @@ class loginhelper { //class for help functions
 	    }
 		
 		static function outputLogoutForm() {
-    		return '<form name="frm_logoutform" action="login_cookie.php" method="post">
+    		return '<form name="frm_logoutform" action="index.php" method="post">
       					<input name="logout" type="submit" value="Logout" />
       				</form>';
+            
    		}
 		
-		static function outputLoginSuccess($username) {   // This function will be called if any errors occur.
-    		//return '<div id="login_success">Willkommen ' . $username . '!</div>'; // It returns the error-text inside a div-box
-			header('Location: index.php'); exit;
-   		}
 			
 	    static function loginUser($username, $password) {	
 			global $DB; 

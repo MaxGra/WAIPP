@@ -34,8 +34,8 @@ class passwordresethelper{
 				return false;*/
             $to = $email;
             $subject = 'Waipp-Passwort zurückgesetzt';
-            $message = "Hallo!\n\nWir haben den Auftrag bekommen dein Passwort zurückzusetzten\n\nDein neues Passwort lautet: "+$pass;
-            $headers = "From: waipp@education4you.at\r\nReply-To: "+$email;
+            $message = "Hallo!\n\nWir haben den Auftrag bekommen dein Passwort zurückzusetzen\n\nDein neues Passwort lautet: ".$pass;
+            $headers = "From: waipp@education4you.at\r\nReply-To: ".$email;
             $mail_sent = @mail( $to, $subject, $message, $headers );
             echo $mail_sent ? "Mail sent" : "Mail failed";		
 			}
