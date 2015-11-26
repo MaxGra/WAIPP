@@ -22,7 +22,7 @@
 	require('includes/adodb/adodb.inc.php'); //integrates the adodb.inc.php file to the webpage
     require('includes/helpers/passwordresethelper.inc.php');
 	$DB = NewADOConnection('mysql'); //creates a new connection to the MySQL-database	
-	$DB->Connect('sql4.freesqldatabase.com','sql497423','UYbHXwcykL','sql497423'); //connect with: server, user, password, database 
+	$DB->Connect('127.0.0.1','flhmnoco5','k8skf1ni','usrdb_flhmnoco5'); //connect with: server, user, password, database 	
     
     echo passwordresethelper::outputResetForm();
 		
