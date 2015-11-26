@@ -50,7 +50,7 @@
                             <div class="panel-heading ">
                         <strong>   Login </strong>  
                             </div>
-                            <div class="panel-body">
+                            <div class="panel-body" id="login">
                                 <form role="form" action="login.php" method="post">
                                        <br />
                                      <div class="form-group input-group">
