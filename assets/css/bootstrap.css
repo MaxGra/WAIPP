@@ -5118,7 +5118,7 @@ a.list-group-item-danger.active:focus {
   color:white!important;
   border-color: #ccc!important;
 }
-.panel-body {
+.panel-body#login {
   padding: 15px;
   background-color: #c90000!important;
   color:white!important;
