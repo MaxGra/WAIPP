@@ -26,8 +26,8 @@
     <div id="wrapper">
         
         <?php
-            echo menuHelper::outputHeader();
-            echo menuHelper::outputMenu();
+            echo menuHelper::outputKellnerHeader();
+            echo menuHelper::outputKellnerMenu();
         ?>
         
             

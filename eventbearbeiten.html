@@ -43,14 +43,17 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                         <a href="index.html"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
                     </li>  	
                       <li >
-                        <a  href="meineevents.html"><i class="fa fa-table fa-3x"></i>Meine Events</a>
+                        <a class="active-menu" href="meineevents.html"><i class="fa fa-table fa-3x"></i>Meine Events</a>
                     </li>
                     <li  >
-                        <a class="active-menu" href="neuesevent.html"><i class="fa fa-edit fa-3x"></i>Neues Event </a>
-                    </li>				
+                        <a  href="neuesevent.html"><i class="fa fa-edit fa-3x"></i>Neues Event </a>
+                    </li>
+                    <li  >
+                        <a  href="auswertungen.html"><i class="fa fa-bar-chart fa-3x"></i>Auswertungen</a>
+                    </li>
 					 <li  >
-                        <a   href="profil.html"><i class="fa fa-bolt fa-3x"></i>Mein Profil</a>
-                    </li>	
+                        <a   href="profil.html" href="profil.html"><i class="fa fa-user fa-3x"></i>Mein Profil</a>
+                    </li>
                      <li  >
                         <a   href="einstellungen.html"><i class="fa fa-laptop fa-3x"></i>Einstellungen</a>
                     </li>		
@@ -64,8 +67,8 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>Neues Event</h2>   
-                        <h5>Neues Event erstellen</h5>
+                     <h2>Event bearbeiten</h2>   
+                        <h5>Event xy bearbeiten</h5>
                        
                     </div>
                 </div>
@@ -78,7 +81,7 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <h3>Event erstellen</h3>
+                                    <h3>Event bearbeiten</h3>
                                     <form role="form">
                                         <div class="form-group">
                                             <label>Event Name</label>
@@ -90,59 +93,26 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                                             <textarea class="form-control" rows="3"></textarea>
                                         </div>
                                         <div class="form-group">
-                                            <label>Logo hochladen</label>
+                                            <label>Neues Eventbild hochladen</label>
                                             <input type="file" />
                                         </div>
-
                                         <div class="form-group">
-                                            <label>Checkboxes</label>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="" />Checkbox Example One
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value=""/>Checkbox Example Two
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value=""/>Checkbox Example Three
-                                                </label>
-                                            </div>
+                                            <label>Tische</label>
+                                            <input type="number" min="0" class="form-control" />
                                         </div>
                                         <div class="form-group">
-                                            <label>Inline Checkboxes Examples</label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox"/> One
-                                            </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox"/> Two
-                                            </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox"/> Three
-                                            </label>
+                                            <label>Anfangsdatum</label>
+                                            <input type="date" class="form-control" />
                                         </div>
                                         <div class="form-group">
-                                            <label>Radio Button Examples</label>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked />Radio Example One
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"/>Radio Example Two
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3"/>Radio Example Three
-                                                </label>
-                                            </div>
+                                            <label>Enddatum</label>
+                                            <input type="date" class="form-control" />
                                         </div>
-                                        
+                                        <div class="form-group">
+                                            <label>Personal</label>
+                                            <input type="number" min="0" class="form-control" />
+                                        </div>
+                                        <!--
                                         <div class="form-group">
                                             <label>Select Example</label>
                                             <select class="form-control">
@@ -160,9 +130,9 @@ font-size: 16px;"> Last access : 30 May 2014 &nbsp; <a href="login.html" class="
                                                 <option>Three Vale</option>
                                                 <option>Four Vale</option>
                                             </select>
-                                        </div>
-                                        <button type="submit" class="btn btn-default">Submit Button</button>
-                                        <button type="reset" class="btn btn-primary">Reset Button</button>
+                                        </div>-->
+                                        <button type="submit" class="btn btn-default">Bestätigen</button>
+                                        <button type="reset" class="btn btn-primary">Zurücksetzen</button>
 
                                     </form>
                         

@@ -1,7 +1,4 @@
-<?php
-class loginhelper { //class for help functions				
-	    static function outputLoginForm() {	//returns my login layaout	
-		return '<center>
+<center>
         <div class="container">
         <div class="row text-center ">
             <div class="col-md-12">
@@ -52,66 +49,18 @@ class loginhelper { //class for help functions
                                     </form>
 
                             </div>
+             
           
       
     </div>
 
   </div>
   <div align="left"
-        <div class="col-md-4 col-sm-6 col-xs-0">
-            <img src="assets/img/waipp.png"  class="img-responsive" width="220px"/>
-        </div>
+       <div class="col-md-4 col-sm-6 col-xs-0">
+
+          <img src="assets/img/waipp.png"  class="img-responsive" width="220px"/>
+      </div>
   </div>
 </div>
 
 </center>
-';
-	    }
-			
-	    static function outputLoginError($err) { //This function will be called if any errors occur		
-			return '<div id="login_error">'.$err.'</div>';	//It returns the error-text inside a div-box
-	    }
-		
-		static function outputLogoutForm() {
-    		return '<form name="frm_logoutform" action="index.php" method="post">
-      					<input name="logout" type="submit" value="Logout" />
-      				</form>';
-            
-   		}
-		
-			
-	    static function loginUser($username, $password) {	
-			global $DB; 
-			$rs = $DB->Execute("SELECT password FROM users WHERE username='$username'"); //This function will check if the given username and password fit the values in our database
-				foreach($rs as $row) { //$DB wouldnt be found inside the class -> it must be referred to the global variable
-				if($row['password'] == $password) //returns all record sets where the column username fits with the given uername
-					return true;	
-				}
-					
-				return false;
-					
-			}
-    
-    static function getUserId($username) {	
-			global $DB; 
-			$rs = $DB->Execute("SELECT pk_user_id FROM users WHERE username='$username'"); //This function will check if the given username and password fit the values in our database
-				foreach($rs as $row) { //$DB wouldnt be found inside the class -> it must be referred to the global variable
-				    return $row['pk_user_id'];
-				}
-					
-				return false;
-					
-			}
-    
-    static function getUserRole($username) {	
-			global $DB; 
-			$rs = $DB->Execute("SELECT role FROM users WHERE username='$username'"); //This function will check if the given username and password fit the values in our database
-				foreach($rs as $row) { //$DB wouldnt be found inside the class -> it must be referred to the global variable
-				    return $row['role'];
-				}
-					
-				return false;
-					
-			}
-		}
-?>

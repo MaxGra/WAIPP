@@ -351,6 +351,59 @@ font-size: 12px;
 line-height: 1.428571429;
 }
 
+/* Meine Events */
+
+.event_container{
+    margin-bottom: 10px !important;
+    position: relative;
+}
+
+.edit{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+.event_status{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+.div_icons_left{
+    border-collapse: inherit;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 70px;
+    margin-bottom: 15px;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    padding-left: 6px;
+    background-color: #ddd;
+}
+.div_icons_right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    padding-left:6px !important;
+    background-color: #ddd;
+}
+.div_icons_left:hover, .div_icons_right:hover{
+    outline: 1px solid #DB0630 !important;
+    border-collapse: inherit;
+    color: #DB0630;
+}
+
 /*==============================================
     MEDIA QUERIES     
     =============================================*/
